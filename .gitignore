@@ -1,0 +1,12 @@
+# Local Environment Configuration
+.env
+
+# Local Databases
+*.db
+*.sqlite3
+
+# Python Virtual Environments
+venv/
+.venv/
+__pycache__/
+*.pyc
