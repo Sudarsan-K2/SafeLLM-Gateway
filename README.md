@@ -59,3 +59,59 @@ As AI tools become more integrated into daily workflows, the risk of accidentall
 │                   UPSTREAM SERVICES                    │
 │      Google GenAI Client Engine (Gemini API)           │
 └────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🧬 Tech Stack
+* **Frontend:** Vanilla JS, Tailwind CSS (via CDN), Lucide Icons
+* **Backend:** `FastAPI` (Python), `Uvicorn` (ASGI Server)
+* **Security:** `PyJWT` (Token generation), `bcrypt` (Password hashing)
+* **Database:** `sqlite3` (Embedded relational database)
+* **File Processing:** `python-multipart`
+
+---
+
+## 🚀 Active Roadmap
+
+This project is currently in active development. Next steps include:
+
+- [x] JWT Security & User Authentication
+- [x] File Processing Sandbox & RegEx Scanner
+- [ ] Migrate local storage from SQLite to PostgreSQL.
+- [ ] Dockerize the application for easier deployment.
+- [ ] Add an API Key scanner to detect leaked AWS/Google secrets in uploaded code.
+
+---
+
+## ⚙️ How to Run Locally
+
+### 1. Setup Environment
+```bash
+git clone [https://github.com/Sudarsan-K2/SafeLLM-Gateway.git](https://github.com/Sudarsan-K2/SafeLLM-Gateway.git)
+cd SafeLLM-Gateway
+python -m venv venv
+# On Windows:
+.\venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+```
+
+### 2. Install Dependencies
+```bash
+pip install fastapi uvicorn google-genai python-dotenv bcrypt PyJWT email-validator python-multipart
+```
+
+### 3. Environment Variables
+Create a `.env` file in the root directory:
+```text
+GEMINI_API_KEY=your_google_api_key_here
+JWT_SECRET=your_custom_secret_key_here
+```
+
+### 4. Start the Server
+```bash
+uvicorn main:app --reload
+```
+Open `index.html` in your browser to log in and start testing!
+```
