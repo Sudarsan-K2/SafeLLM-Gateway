@@ -76,8 +76,8 @@ As AI tools become more integrated into daily workflows, the risk of accidentall
 
 This project is currently in active development. Next steps include:
 
-- [x] JWT Security & User Authentication
-- [x] File Processing Sandbox & RegEx Scanner
+- [✅] JWT Security & User Authentication
+- [✅] File Processing Sandbox & RegEx Scanner
 - [ ] Migrate local storage from SQLite to PostgreSQL.
 - [ ] Dockerize the application for easier deployment.
 - [ ] Add an API Key scanner to detect leaked AWS/Google secrets in uploaded code.
